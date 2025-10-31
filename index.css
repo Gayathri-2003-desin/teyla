@@ -1899,6 +1899,14 @@ justify-content: space-between;
         .main-image img{
         width: 100%;
     }
+
+.head-logo img {
+    display: none;
+}
+.fal-logo img {
+    display: none;
+}
+
     /* .menu-icon {
         display: block;
         color: black;
