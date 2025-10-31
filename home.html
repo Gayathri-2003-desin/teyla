@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet"> -->
+
+
+</head>
+<div class="main-wrapper">
+    <div class="wrap-one">
+        <div class="main-image"
+            style="background-image: url('images/landing.png'); background-size: cover; background-repeat: no-repeat; opacity: 0.9; width:100%;  padding-top: 5px;">
+
+<!--           
+ <nav>
+            <div class="head-section">
+                <div class="head-logo">
+                     <img src="images/s-logo.png">
+                </div>
+                <nav class="navbar">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+ 
+   <div class="head-left">
+        <a class="head-home" href="home.html">Home</a>
+        <a class="head-about" href="about.html">About Us</a>
+        <a class="head-product" href="destination.html">Destinations</a>
+        <a class="head-gallery" href="ayurveda.html">Ayurveda</a>
+        </div>
+        
+</nav>
+<div class="right-contact">
+
+
+
+
+         <style>
+  
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+.dropbtn {
+    font-weight: 500;
+    border-radius: 117px;
+    margin-top: 0px;
+    padding: 15px;
+    background-color: #014D4E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+      margin-top: 8px;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">Contact Us</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Whatsapp</a>
+      <a href="#">Text Message</a>
+      <a href="#">Request a call</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          const openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+
+
+
+
+
+    </div>
+
+                </div>
+            </nav> -->
+
+<style>
+    /* ===== BASIC NAVBAR STYLING ===== */
+    .head-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Logo */
+    .head-logo img {
+      width: 120px;
+    }
+
+    /* Menu icon (hamburger) */
+    .menu-icon {
+        color: black;
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* Menu links */
+    .head-left {
+      display: flex;
+      gap: 20px;
+    }
+
+    .head-left a {
+      text-decoration: none;
+      color: #014D4E;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      transition: 0.3s;
+    }
+
+    .head-left a:hover {
+      color: #018A8C;
+    }
+
+    /* Right contact section */
+    .right-contact {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* ===== DROPDOWN BUTTON ===== */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      font-weight: 500;
+      border-radius: 117px;
+      padding: 12px 18px;
+      background-color: #014D4E;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .dropbtn:hover {
+      background-color: #018A8C;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+      margin-top: 8px;
+      right: 0;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown.show .dropdown-content {
+      display: block;
+    }
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* @media (max-width: 768px) {
+
+  .head-section {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 16px; 
+    height: 65px;
+  }
+
+ 
+  .menu-icon {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+  }
+
+
+  .head-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .right-contact {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  .head-left {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .head-left.active {
+    display: flex;
+    background-color: white;
+  }
+
+ 
+  .dropbtn {
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+
+  .dropbtn span {
+    display: none;
+  }
+
+  .dropbtn::before {
+    content: "📞";
+  }
+} */
+
+
+
+
+@media (max-width: 768px) {
+  /* Navbar container */
+  .head-section {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 16px;
+    height: 65px;
+    background-color: #fff; /* Solid background for the navbar */
+    z-index: 1000;
+  }
+
+  /* Menu icon on the left */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1200;
+  }
+
+  /* Center the logo */
+  .head-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1100;
+  }
+
+  /* Contact icon on the right */
+  .right-contact {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1200;
+  }
+
+  /* Hidden menu by default */
+  .head-left {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed; /* fixed makes sure it covers full width and height if needed */
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1); /* 100% solid background */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 1100;
+  }
+
+  /* Show menu when active */
+  .head-left.active {
+    display: flex;
+  }
+
+  /* Menu links styling */
+  .head-left a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #014D4E;
+  }
+  .head-section {
+    margin: 0px;
+  }
+
+  .head-left a:hover {
+    background-color: #f2f2f2;
+    color: #018A8C;
+  }
+
+  /* Contact button becomes phone icon only */
+  .dropbtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  .dropbtn span {
+    display: none;
+  }
+
+  .dropbtn::before {
+    content: "📞";
+  }
+}
+
+
+
+
+
+  </style>
+
+
+
+
+
+
+<body>
+  <nav>
+    <div class="head-section">
+      <div class="head-logo">
+        <img src="images/s-logo.png" alt="Logo">
+      </div>
+
+      <div class="navbar">
+        <span class="menu-icon">&#9776;</span>
+        <div class="head-left">
+          <a class="head-home" href="home.html">Home</a>
+          <a class="head-about" href="about.html">About Us</a>
+          <a class="head-product" href="destination.html">Destinations</a>
+          <a class="head-gallery" href="ayurveda.html">Ayurveda</a>
+        </div>
+      </div>
+
+      <div class="right-contact">
+        <div class="dropdown">
+          <button class="dropbtn"><span>Contact</span></button>
+          <div class="dropdown-content">
+            <a href="#">Email</a>
+            <a href="#">Phone</a>
+            <a href="#">Location</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // ===== Navbar Toggle =====
+    const menuIcon = document.querySelector(".menu-icon");
+    const headLeft = document.querySelector(".head-left");
+
+    menuIcon.addEventListener("click", () => {
+      headLeft.classList.toggle("active");
+      // Switch icon
+      if (headLeft.classList.contains("active")) {
+        menuIcon.innerHTML = "&#10005;"; // X icon
+      } else {
+        menuIcon.innerHTML = "&#9776;"; // ☰ icon
+      }
+    });
+
+    // ===== Dropdown Toggle =====
+    const dropdown = document.querySelector(".dropdown");
+    const dropBtn = document.querySelector(".dropbtn");
+
+    dropBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("show");
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener("click", (event) => {
+      if (!event.target.closest(".dropdown")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                <div class="home-main">
+                    <div class="teyla-main">
+                   <img src="images/teyla-logo.png">
+                    </div>
+         
+                </div>
+        </div>
+    </div>
+
+    <div class="wrap-two">
+          <div class="teys">
+            <img src="images/teys.png">
+        </div>
+        <div class="teyla-head">
+           <h1>Teyla means peaceful <br>journey</h1>
+        </div>
+        <!-- <div class="teys">
+            <img src="images/teys.png">
+        </div> -->
+    </div>
+    <div class="wrap-four">
+
+   
+    </div>
+    <div class="wrap-mid">
+    <div class="wrap-four-one">
+        <div class="teyla-flex">
+            <div class="beach">
+                <img class="sea" src="images/fire.jpg" alt="drinks" />
+                <img class="tea" src="images/beach.jpg">
+                <img class="hospital" src="images/hospital.jpeg">
+                
+            </div>
+            <div class="business">
+            <h2>About Our Teyla</h2>
+            <p class="business-para"> Discover the Soul of North Malabar with Teyla.</p>
+       
+            <div class="energy-trading">
+                <p class="trading-para">TEYLA An Experience Tour Seller" have been initiated to bring out the best experiential tourism in north Malabar. We aim to bring out the best travel and experience package for our guests. We are committed to serving the needs of travelers worldwide, ensuring that guests experience the true North Malabar and its wonderful hospitality. We give priority and Value for money, comfortable rooms and impeccable service delivery.
+               <div class="discover-about">
+                    <a href="about.html"><button>Discover more about Teyla</button></a>
+                    </div>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+
+    <div class="wrap-five">
+
+
+ <div class="web-features">
+           <h1>About North Malabar</h1>
+         <p> 
+            North Malabar along with its unique tradition and magnetic culture is gifted with lots of spellbinding desti- nations such as stunning beaches, fertile green paddy field, amusing forts, cool & soothing hill stations, beauti- ful shallow lagoons and amazing flora & fauna. North Malabar Wedged between the Western ghats and stretching over parts of Kozhikode, Wayanad, Kannur and Kasaragod districts of Kerala. North Malabar has played an integral role in shaping Kerala into what it is today, North Malabar is an unexplored region. The culture, landscape, language, and way of life here are dif- ferent from other parts of kerala
+         </p>
+        </div>
+
+
+        
+    </div>
+    </div>
+
+    <div class="fin-wrap">
+    <div class="wrap-six">
+        <div class="expert-images">
+            <div class="viscosity">
+                <img src="images/theyyam.jpg" alt="viscosity" />
+                <h2>Art Forms</h2>
+                <a href="about.html">Read More</a>
+            </div>
+            <div class="fuel">
+                 <img src="images/calicut.jpg" alt="fuel">
+                    <h2>Beaches </h2>
+                <a href="about.html">Read More</a>
+            </div>
+            <div class="fuel-two">
+                <img src="images/kasaragod.jpg" alt="gas">
+                    <h2>Architecture</h2>
+                <a href="about.html">Read More</a>
+            </div>
+          <div class="fuel">
+                 <img src="images/wayanad.jpg" alt="fuel">
+                    <h2>Forest </h2>
+                <a href="about.html">Read More</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="eight-nine">
+    <div class="wrap-eight">
+
+        <div class="petrogrid-wrap">
+            <div class="petrol-wrap">
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Petroleum refinery project</p>
+                    </div>
+                </div>
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Contaminated hydrocarbon refining plant</p>
+                    </div>
+                </div>
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" awqheight="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Kerosene fraction distillation unit</p>
+                    </div>
+                </div>
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>White spirit solvent plant</p>
+                    </div>
+                </div>
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Tank farm project</p>
+                    </div>
+                </div>
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Process design engineering</p>
+                    </div>
+                </div>
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Process equipment supply</p>
+                    </div>
+                </div>
+
+
+                <div class="petrol">
+                    <div class="petrol-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                    </div>
+                    <div class="petrol-text">
+                        <p>Solvent extraction project </p>
+                    </div>
+                </div>
+            </div>
+            <div class="petrol-pipe">
+                <div class="pipe">
+                    <img src="Images/petrol-plant.png" alt="petrol">
+
+                </div>
+                <div class="serve">
+                    <div class="serve-para">
+                        <p>SERVING SINCE 1993</p>
+                    </div>
+                    <div class="serve-head">
+                        <h2>Providing the best quality oil around the world.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-nine">
+        <center>
+
+        </center>
+    </div>
+   
+<footer>
+    <div class="footer">
+      <div class="fal-logo">
+        <img src="images/s-logo.png" alt="logo">
+      </div>
+
+      <div class="info">
+        <h4>INFO</h4>
+
+        <div class="info-para">
+        <a class="catalog" href="home.html">Home</a>
+        <a class="out"href="about.html">About Us</a>
+        <a class="serve" href="destination.html">Destinations</a>
+        <a class="phone" href="ayurveda.html">Ayurveda</a>
+        </div>
+
+      </div>
+
+      <div class="contact">
+        <h4>CONTACT US</h4>
+        <div class="cont">
+        <div class="call">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+        <p> 
+            <a href="tel:+917907827617">
+                +917907827617, +918075195423</a>
+        </p>
+       </div>
+        <p class="e-mail"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="white">
+<path d="M0.0850001 1.96871L11.1788 13.0637C11.5069 13.3921 11.9453 13.5871 12.409 13.6109C12.8727 13.6347 13.3287 13.4856 13.6888 13.1925L13.8312 13.0637L24.9175 1.97621C24.9533 2.11371 24.9775 2.25413 24.99 2.39746L25 2.61621V17.6162C25.0002 18.2469 24.762 18.8544 24.3331 19.3169C23.9043 19.7794 23.3164 20.0627 22.6875 20.11L22.5 20.1162H2.5C1.86928 20.1164 1.26179 19.8782 0.799315 19.4493C0.336838 19.0205 0.0535541 18.4327 0.00625014 17.8037L0 17.6162V2.61621C0 2.46621 0.0125 2.32038 0.0375 2.17871L0.0850001 1.96871ZM22.5 0.116211C22.6517 0.116211 22.7996 0.129128 22.9437 0.154961L23.1562 0.203711L12.5063 10.8537L1.8525 0.201211C1.99083 0.163711 2.1325 0.138711 2.2775 0.126211L2.5 0.116211H22.5Z" fill="white"/>
+</svg><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@falconyx.ae" target="_blank">
+teylatrip@gmail.com
+</a>
+ </p>
+        </div>
+ </div>
+<div class="find-us">
+      <h4>FIND US</h4>
+      <div class="addr-insta">
+      <div class="addr">
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" viewBox="0 0 30 30" fill="none">
+<path d="M15 14.375C14.1712 14.375 13.3763 14.0458 12.7903 13.4597C12.2042 12.8737 11.875 12.0788 11.875 11.25C11.875 10.4212 12.2042 9.62634 12.7903 9.04029C13.3763 8.45424 14.1712 8.125 15 8.125C15.8288 8.125 16.6237 8.45424 17.2097 9.04029C17.7958 9.62634 18.125 10.4212 18.125 11.25C18.125 11.6604 18.0442 12.0667 17.8871 12.4459C17.7301 12.825 17.4999 13.1695 17.2097 13.4597C16.9195 13.7499 16.575 13.9801 16.1959 14.1371C15.8167 14.2942 15.4104 14.375 15 14.375ZM15 2.5C12.6794 2.5 10.4538 3.42187 8.81282 5.06282C7.17187 6.70376 6.25 8.92936 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 8.92936 22.8281 6.70376 21.1872 5.06282C19.5462 3.42187 17.3206 2.5 15 2.5Z" fill="white"/>
+</svg> 
+<a href="https://www.google.com/maps/search/?api=1&query=Sharjah Media City Sharjah 839, UAE" target="_blank">
+Kolachery P.O, Kolacherymukk Kannur, Kerala, 670601
+</a>
+</p>
+</div>
+<div class="insta">
+<p ><img src="images/insta.png" alt="instagram"> <a href="https://www.instagram.com/falconyxtrading/" target="_blank">
+ #teyla_tourseller<br>
+ #teyla_trips
+</a></p>
+</div>
+</div>
+</div>
+     
+    </div>
+    </footer>
+    
+</div>
+</div>
+</body>
+
+</html>
