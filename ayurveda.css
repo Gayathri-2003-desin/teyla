@@ -260,7 +260,7 @@ margin: 0px;
     text-align: justify;
 }
 .course {
-    margin-top: 70px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -776,6 +776,11 @@ flex-shrink: 0;
     padding: 45px 0;
     z-index: 999;
   }
+
+       .head-left {
+      display: flex;
+      gap: 20px;
+    }
  
 
   .head-left a {
@@ -1228,6 +1233,10 @@ body{
     padding: 45px 0;
     z-index: 999;
   }
+       .head-left {
+      display: flex;
+      gap: 20px;
+    }
 
   .head-left a {
     margin: 10px 0;
@@ -1474,13 +1483,16 @@ body{
 
 
 .course {
-    margin-top: 70px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns:  1fr;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
     margin-left: 20px;
+}
+.course-img {
+    margin-top: 30px;
 }
 .consult-head p {
     text-align: center;

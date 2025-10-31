@@ -1134,6 +1134,10 @@ flex-shrink: 0;
     text-align: center;
     color: white;
   }
+       .head-left {
+      display: flex;
+      gap: 20px;
+    }
 
   #menu-toggle:checked + .menu-icon + .head-left {
     display: flex;
@@ -1731,6 +1735,10 @@ body{
         font-size: 40px;
             padding-top: 14px;
 }
+     .head-left {
+      display: flex;
+      gap: 20px;
+    }
 
 .bluecast {
     display: flex;

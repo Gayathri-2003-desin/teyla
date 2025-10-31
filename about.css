@@ -1105,6 +1105,10 @@ flex-shrink: 0;
         padding: 45px 0;
         z-index: 999;
     }
+         .head-left {
+      display: flex;
+      gap: 20px;
+    }
 
   .head-left a {
     margin: 10px 0;
@@ -1164,7 +1168,17 @@ text-align: justify;
     text-transform: uppercase;
     padding-left: 10px;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 30px;
+}
+.cult-img {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+.agri-head h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 0px;
 }
 .why-mark {
 font-family: 'Outfit', sans-serif;
@@ -1521,6 +1535,10 @@ font-family: 'Outfit', sans-serif;
     text-align: center;
     color: white;
   }
+       .head-left {
+      display: flex;
+      gap: 20px;
+    }
 
   #menu-toggle:checked + .menu-icon + .head-left {
     display: flex;
