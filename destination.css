@@ -1152,6 +1152,24 @@ flex-shrink: 0;
         padding-left: 0px;
         text-align: center;
 }
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark layer */
+      color: #fff;
+      display: flex;
+          align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 40px;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: 10px;
+    }
   .head-section {
     display: flex;
     justify-content: space-between;
@@ -1622,6 +1640,27 @@ body{
 .oil-bottle img {
     display: none;
 }
+
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark layer */
+      color: #fff;
+      display: flex;
+          align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 40px;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: 10px;
+    }
+
     .solutions h1 {
         font-family: 'Sofia Sans Extra Condensed', sans-serif;
         display: flex;
