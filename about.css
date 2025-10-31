@@ -1496,6 +1496,13 @@ font-family: 'Outfit', sans-serif;
     /* height: 131px; */
     margin: 0px;
 }
+.photo-two img {
+        /* position: relative;
+        top: 35px;
+        width: 100%;
+        height: 244px; */
+        display: none;
+    }
 .fal-logo img {
     display: none;
 }
